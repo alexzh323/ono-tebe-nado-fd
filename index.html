@@ -17,7 +17,7 @@
             
             <ul class="menu-list">
               <li class="menu-point special-list-style">
-                <a href="0">главная</a>
+                <a href="0" class="header__link_active">главная</a>
               </li>
               <li class="menu-point">
                 <a href="#lots">посмотреть лоты</a>
@@ -72,10 +72,11 @@
          <!-- карточка, содержит ссылку (внутри нее нужен тег article) и абзац. 
          Плюс фон требует уникальный класс для каждой карточки
          еще в каждой карточке есть оверлей, аналогичный заголовку-->
-         <div class="overlay">
-         </div>
-         <a class="card__title">
-          <article>Фильм режиссёра, который бросил киношколу</article>
+         
+         <a class="card__title">Фильм режиссёра, который бросил киношколу
+          <div class="overlay"></div>
+          <article class="article">
+          </article>
          </a>
          <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
        </li>
@@ -150,13 +151,13 @@
       </nav>
 
       <div class="menu-images">
-        <a class="footer-menu-image">
+        <a class="footer-menu-image" href="https://www.youtube.com/" target="_blank">
           <img src="./images/yt.svg" alt="черный значок ютуба">
         </a>
-        <a class="footer-menu-image">
+        <a class="footer-menu-image" href="https://vk.com/" target="_blank">
           <img src="./images/vk.svg" alt="черный значок вк">
         </a>
-        <a class="footer-menu-image">
+        <a class="footer-menu-image" href="https://ru.pinterest.com/" target="_blank">
           <img src="./images/pinterest.svg" alt="черный значок pinterest">
         </a>
       </div>
