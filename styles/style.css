@@ -1,5 +1,5 @@
 .header {
-  margin-top: 120px;
+  margin-top: 60px;
   margin-bottom: 90px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -100,7 +100,7 @@
   word-spacing: 19px;
 }
 
-.description{
+.description {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -175,7 +175,7 @@
   padding: 50px 40px 0 40px;
 }
 
-.card__text{
+.card__text {
   font-size: 20px;
   padding: 0 40px 56px 40px;
 }
@@ -183,13 +183,13 @@
 .card-one {
   background-image: url(../images/card-lot-01.jpg);
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .card-two {
   background-image: url(../images/card-lot-02.jpg);
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .card-three {
@@ -246,10 +246,6 @@
   height: auto;
 }
 
-.about__text {
-  font-size: 20px;
-}
-
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -267,11 +263,11 @@
   align-items: center;
 }
 
-.menu-images{
+.menu-images {
   display: flex;
   align-items: start;
   justify-content: end;
-  gap: 47px; 
+  gap: 47px;
 }
 .footer-menu-image {
   width: 50px;
