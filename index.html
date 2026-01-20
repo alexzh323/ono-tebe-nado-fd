@@ -14,13 +14,15 @@
       <nav class="menu">
             <ul class="menu-list">
               <li class="menu-point special-list-style">
-                <a href="0" class="header__link_active">главная</a>
+                <a href="" class="nav__link">главная</a>
+                <!--НАДО ИСПРАВИТЬ: у активных пунктов навигации пропадает подчеркивание
+                для этого добавлен класс nav__link. Работает и в футере-->
               </li>
               <li class="menu-point">
-                <a href="#lots">посмотреть лоты</a>
+                <a href="#lots" class="nav__link">посмотреть лоты</a>
               </li>
               <li class="menu-point">
-                <a href="#about">об аукционе</a>
+                <a href="#about" class="nav__link">об аукционе</a>
               </li>
           </ul>
       </nav>
@@ -34,10 +36,10 @@
         но на будущие обязателно учту: в списках будут толко однородные элементы-->
         <ul class="contacts">
           <li>
-            <a href="tel:+99995555555">+9 999 555 5555</a>
+            <a href="tel:+99995555555" class="nav__link">+9 999 555 5555</a>
           </li>
           <li>
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+            <a href="mailto:info@sobaka.ge" class="nav__link">info@sobaka.ge</a>
           </li>
           <li>
             <p class="address">наб. Принсенграхт 263-<br>265, Амстердам</p>
@@ -66,32 +68,42 @@
       <section class="lots" id="lots">
        <h2 class="lots__heading">лоты</h2>
        <ul class="lots__card-list">
-        <li class="white-text card card-paul-anderson">
-         <!--НАДО ИСПРАВИТЬ: переименованы классы карточек
+        <li class="white-text card-container">
+         <!--НАДО ИСПРАВИТЬ: исправена струкрура карточек:
+         теперь вся каточка является ссылкой. Оверлей и фон находятся внутри карточки.
+         Классы card теперь относятся к article для возможности переисползования карточек.
+         Пришось добавить  касс card-container для элементов списка. 
+         Без него каждый li занимает 100% ширины родителя и в итоге карточки выстраиваются в столбик.
+         Чтобы избежать этого, я перенес ширину из свойств карточки в свойства элемента списка li
+         Добавлен класс card-link для ссылок <a> чтобы убрать подчеркивание в тексте-->
+         <a href="" class="card-link">
+           <article class="card card-paul-anderson">
+            <!--НАДО ИСПРАВИТЬ: переименованы классы карточек
          Теперь названия отражают смысл карточки, а не порядковый номер.
          Соответствующие правила css также поправлены-->
-         <a class="card__title">Фильм режиссёра, который бросил киношколу
-          <div class="overlay"></div>
-          <article class="article">
-          </article>
-         </a>
-         <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-       </li>
-       <li class="white-text card card-ulysses">
-          <div class="overlay">
-         </div>
-          <a class="card__title">
-          <article>Книга, где описан один скучный день из жизни рекламного агента</article>
-         </a>
-         <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+             <div class="overlay"></div>
+             <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+             <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+           </article>
+          </a>
         </li>
-        <li class="white-text card card-kandinsky">
-          <div class="overlay">
-         </div>
-          <a class="card__title">
-          <article>Картина, которую повторит даже 5-летний сын маминой подруги</article>
-         </a>
-         <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+        <li class="white-text card-container">
+          <a href="" class="card-link">
+            <article class="card card-ulysses">
+             <div class="overlay"></div>
+             <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+             <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+            </article>
+          </a>
+        </li>
+        <li class="white-text card-container">
+          <a href="" class="card-link">
+            <article class="card card-kandinsky">
+              <div class="overlay"></div>
+              <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+            </article>
+          </a>
         </li>
        </ul>
        <a class="lots__look-more-link">посмотреть больше</a>
@@ -117,10 +129,10 @@
        <address>
         <ul class="footer__contacts special-list-style">
         <li>
-          <a href="tel:+99995555555">+9 999 555 5555</a>
+          <a href="tel:+99995555555" class="nav__link">+9 999 555 5555</a>
         </li>
         <li>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <a href="mailto:info@sobaka.ge" class="nav__link">info@sobaka.ge</a>
         </li>
         <li>
           <p class="address-footer">наб. Принсенграхт 263-265,<br> Амстердам</p>
@@ -131,13 +143,13 @@
       <nav  class="footer__menu">
         <ul class="menu-list-footer">
               <li class="footer-menu-point special-list-style">
-                <a href="0">главная</a>
+                <a href="" class="nav__link">главная</a>
               </li>
               <li class="footer-menu-point special-list-style">
-                <a href="#lots">посмотреть лоты</a>
+                <a href="#lots" class="nav__link">посмотреть лоты</a>
               </li>
               <li class="footer-menu-point special-list-style">
-                <a href="#about">об аукционе</a>
+                <a href="#about" class="nav__link">об аукционе</a>
               </li>
           </ul>
       </nav>
