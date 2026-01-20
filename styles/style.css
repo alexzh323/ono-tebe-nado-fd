@@ -182,19 +182,19 @@
   padding: 0 40px 56px 40px;
 }
 
-.card-one {
+.card-paul-anderson {
   background-image: url(../images/card-lot-01.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.card-two {
+.card-ulysses {
   background-image: url(../images/card-lot-02.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.card-three {
+.card-kandinsky {
   background-image: url(../images/card-lot-03.jpg);
   background-position: center;
   background-size: cover;
