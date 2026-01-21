@@ -169,10 +169,8 @@
   background-position: center;
   background-size: cover;
 }
-
-.card-link {
-  text-decoration: none;
-}
+/* фиксированный размер заменен на минималный, 
+свойства фона перенесены из конкретных карточек*/
 
 .article {
   position: relative;
@@ -186,6 +184,7 @@
   text-transform: uppercase;
   padding: 50px 40px 0 40px;
 }
+/*удален  размер, решена проблема с переполнением*/
 
 .card__text {
   font-size: 20px;
@@ -255,7 +254,7 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 173px;
+  padding-top: 173px;
   padding-bottom: 100px;
   font-size: 18px;
   text-underline-offset: 4px;
@@ -264,7 +263,8 @@
   align-items: start;
   justify-content: start;
 }
-
+/* внешний отступ для футера заменен внутренним, 
+расстояние между футером и предыдущим блоком исчезло*/
 .menu-colomn {
   display: flex;
   flex-direction: column;
@@ -285,7 +285,8 @@
 }
 
 .nav__link:active,
-.link-no-decoration {
+.link-no-decoration,
+.card-link {
   text-decoration: none;
 }
 
