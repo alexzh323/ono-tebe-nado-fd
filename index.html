@@ -127,7 +127,7 @@
     <footer class="footer">
 
        <address>
-        <ul class="footer__contacts special-list-style">
+        <ul class="contacts special-list-style no-left-pagging">
         <li>
           <a href="tel:+99995555555" class="nav__link">+9 999 555 5555</a>
         </li>
@@ -140,15 +140,19 @@
       </ul>
       </address>
       
-      <nav  class="footer__menu">
-        <ul class="menu-list-footer">
-              <li class="footer-menu-point special-list-style">
+      <nav class="menu">
+        <ul class="menu-list menu-colomn">
+           <!--НАДО ИСПРАВИТЬ: список меню для header и footer теперь подчиняются
+           стилям от одного класса. Это касается как меню навигации, так и меню с адресами-->
+           <!--НАДО ИСПРАВИТЬ: проблема с несоответствием меню контактов образцу в футере решилась автоматически
+           посе выполнения предыдущего исправления-->
+              <li class="menu-point special-list-style">
                 <a href="" class="nav__link">главная</a>
               </li>
-              <li class="footer-menu-point special-list-style">
+              <li class="menu-point special-list-style">
                 <a href="#lots" class="nav__link">посмотреть лоты</a>
               </li>
-              <li class="footer-menu-point special-list-style">
+              <li class="menu-point special-list-style">
                 <a href="#about" class="nav__link">об аукционе</a>
               </li>
           </ul>
