@@ -162,10 +162,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 600px;
+  min-height: 600px;
   width: 100%;
   position: relative;
   z-index: 1;
+  background-position: center;
+  background-size: cover;
 }
 
 .card-link {
@@ -177,7 +179,6 @@
 }
 
 .card__title {
-  height: 120%;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -193,20 +194,14 @@
 
 .card-paul-anderson {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card-ulysses {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card-kandinsky {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -284,11 +279,13 @@
   list-style-type: none;
   gap: 47px;
 }
+
 .footer-menu-image {
   width: 50px;
 }
 
-.nav__link:active {
+.nav__link:active,
+.link-no-decoration {
   text-decoration: none;
 }
 
