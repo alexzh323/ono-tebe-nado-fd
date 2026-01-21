@@ -48,7 +48,7 @@
 }
 
 .white-text {
-  color: #ffffff
+  color: #ffffff;
 }
 
 .cover {
@@ -281,10 +281,11 @@
   display: flex;
   align-items: start;
   justify-content: end;
+  list-style-type: none;
   gap: 47px;
 }
 .footer-menu-image {
-  width: 15%;
+  width: 50px;
 }
 
 .nav__link:active {

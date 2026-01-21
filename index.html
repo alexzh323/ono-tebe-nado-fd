@@ -12,19 +12,19 @@
   <body class="body">
     <header class="header">
       <nav class="menu">
-            <ul class="menu-list">
-              <li class="menu-point special-list-style">
-                <a href="" class="nav__link">главная</a>
+        <ul class="menu-list">
+          <li class="menu-point special-list-style">
+            <a href="" class="nav__link">главная</a>
                 <!--НАДО ИСПРАВИТЬ: у активных пунктов навигации пропадает подчеркивание
                 для этого добавлен класс nav__link. Работает и в футере-->
-              </li>
-              <li class="menu-point">
-                <a href="#lots" class="nav__link">посмотреть лоты</a>
-              </li>
-              <li class="menu-point">
-                <a href="#about" class="nav__link">об аукционе</a>
-              </li>
-          </ul>
+          </li>
+          <li class="menu-point">
+            <a href="#lots" class="nav__link">посмотреть лоты</a>
+          </li>
+          <li class="menu-point">
+            <a href="#about" class="nav__link">об аукционе</a>
+          </li>
+        </ul>
       </nav>
       <a class="logo">
          <img src="./images/logo-black.svg" alt="черный логотип Оно Тебе Надо">
@@ -60,7 +60,7 @@
           <p class="cover__description-text letter-spacing-extended">аукцион вещей, в которые никто не верил</p>
           <div class="button-container">
 <!--можно лучше: изъятие элемента из списка сильно сбивает форматирование
-        но в будущим постараюсь избегать ишних элементов-->
+        но в будущим постараюсь избегать лишних элементов-->
            <button class="button white-text">сделать ставку</button>
           </div>
         </div>
@@ -113,8 +113,8 @@
            <img src="./images/logo-white.svg" alt="белый логотип Оно Тебе Надо" class="logo_img">
         </div>
          <div class="about__column">
-          <!--НАДО ИСПРАВИТЬ: заменена секция на див для соответствия структуре сайта--> 
-           <h2 class="about__title">об аукционе</h3>
+           <!--НАДО ИСПРАВИТЬ: заменена секция на див для соответствия структуре сайта--> 
+           <h2 class="about__title">об аукционе</h2>
            <!--НАДО ИСПРАВИТЬ: заменен уровень заголовка на h2-->
            <div class="about__text">
             <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
@@ -128,16 +128,16 @@
 
        <address>
         <ul class="contacts special-list-style no-left-pagging">
-        <li>
-          <a href="tel:+99995555555" class="nav__link">+9 999 555 5555</a>
-        </li>
-        <li>
-          <a href="mailto:info@sobaka.ge" class="nav__link">info@sobaka.ge</a>
-        </li>
-        <li>
-          <p class="address-footer">наб. Принсенграхт 263-265,<br> Амстердам</p>
-        </li>
-      </ul>
+          <li>
+            <a href="tel:+99995555555" class="nav__link">+9 999 555 5555</a>
+          </li>
+          <li>
+            <a href="mailto:info@sobaka.ge" class="nav__link">info@sobaka.ge</a>
+          </li>
+          <li>
+            <p class="address-footer">наб. Принсенграхт 263-265,<br> Амстердам</p>
+          </li>
+        </ul>
       </address>
       
       <nav class="menu">
@@ -158,17 +158,24 @@
           </ul>
       </nav>
 
-      <div class="menu-images">
-        <a class="footer-menu-image" href="https://www.youtube.com/" target="_blank">
-          <img src="./images/yt.svg" alt="черный значок ютуба">
-        </a>
-        <a class="footer-menu-image" href="https://vk.com/" target="_blank">
-          <img src="./images/vk.svg" alt="черный значок вк">
-        </a>
-        <a class="footer-menu-image" href="https://ru.pinterest.com/" target="_blank">
-          <img src="./images/pinterest.svg" alt="черный значок pinterest">
-        </a>
-      </div>
+      <ul class="menu-images">
+        <!--можно лучше: Ссылки на соцсети теперь оформлены в виде списка-->
+        <li>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="./images/yt.svg" alt="черный значок ютуба" class="footer-menu-image">
+          </a>
+        </li>
+        <li>
+          <a href="https://vk.com/" target="_blank">
+            <img src="./images/vk.svg" alt="черный значок вк" class="footer-menu-image">
+          </a>
+        </li>
+        <li>
+          <a href="https://ru.pinterest.com/" target="_blank">
+            <img src="./images/pinterest.svg" alt="черный значок pinterest" class="footer-menu-image">
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
